@@ -275,13 +275,12 @@ p {
   padding: 0;
 }
 
-header, .main-pynkts, .occupation, .comand--width, .clients {
-  width: 460px;
+header, footer, .main-pynkts, .occupation, .comand--width, .clients {
+  width: 480px;
   padding: 0 15px;
-  margin: 0 auto;
 }
 
-.modal__close, .modal__button-send, .part-occupation__overlay, .ss-link, .clients-list__link, .overlay__text, .subscribe__input, .subscribe__btn {
+.modal__close, .modal__button-send, .part-occupation__overlay, .ss-link, .clients-list__element, .overlay__text, .subscribe__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,7 +294,6 @@ header, .main-pynkts, .occupation, .comand--width, .clients {
 
 body {
   font-family: Roboto;
-  max-width: 1600px;
 }
 
 a {
@@ -318,19 +316,9 @@ header {
 
 footer {
   background-color: #2F303A;
-  padding-top: 48px;
+  padding: 60px 0;
   padding-bottom: 20px;
-}
-
-.ftr {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
 }
 
 .nav__open-menu {
@@ -506,15 +494,16 @@ footer {
 .hello {
   position: relative;
   background-image: url(../img/Header_imgfon.png);
-  height: 600px;
-  max-width: 1600px;
+  background-size: contain;
+  height: 400px;
+  width: 480px;
   margin-bottom: 94px;
   text-align: center;
 }
 
 .hello__overlay {
   position: absolute;
-  padding-top: 200px;
+  padding: 115px 0;
   width: 100%;
   height: 100%;
   top: 0;
@@ -523,12 +512,12 @@ footer {
 }
 
 .hello__title {
-  width: 600px;
+  width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
+  font-size: 26px;
+  line-height: 42px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -741,14 +730,8 @@ footer {
   display: none;
 }
 
-.pynkts__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .pynkts {
-  width: 270px;
+  width: 450px;
 }
 
 .pynkts:not(:last-child) {
@@ -756,10 +739,18 @@ footer {
 }
 
 .pynkts__fon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #F5F4FA;
-  width: 270px;
+  width: 450px;
   height: 120px;
-  padding: 30px 100px;
   margin-bottom: 30px;
 }
 
@@ -769,6 +760,7 @@ footer {
 }
 
 .pynkts__title {
+  text-align: center;
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
@@ -786,6 +778,7 @@ footer {
 
 .occupation {
   margin-bottom: 94px;
+  display: none;
 }
 
 .occupation-list {
@@ -843,21 +836,20 @@ footer {
 }
 
 .personal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-align: center;
 }
 
 .worker {
+  width: 450px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  padding-bottom: 24px;
 }
 
 .worker:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .worker__photo {
@@ -882,9 +874,12 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 205px;
-  margin: 0 auto;
-  margin-bottom: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .ss-list__element:not(:last-child) {
@@ -925,26 +920,29 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
 }
 
-.clients-list__link {
+.clients-list__element {
   -webkit-transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 210px;
+  height: 90px;
+  margin: 15px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
-  height: 90px;
+}
+
+.clients-list__link {
   fill: #afb1b8;
 }
 
-.clients-list__element:not(:last-child) {
-  margin-right: 30px;
-}
-
-.clients-list__link:hover,
-.clients-list__link:focus {
+.clients-list__element:hover,
+.clients-list__element:focus {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   border: 1px solid #2196f3;
@@ -1088,17 +1086,17 @@ footer {
 
 address {
   font-style: normal;
-  margin-right: 70px;
+  margin-bottom: 60px;
 }
 
 .adress__name-company {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   height: 28px;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .name-company--white {
@@ -1108,7 +1106,7 @@ address {
 
 .adress__text {
   display: inline-block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
@@ -1122,11 +1120,11 @@ address {
 }
 
 .adress__link:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .join {
-  margin-right: 100px;
+  margin-bottom: 60px;
   margin-top: 8px;
 }
 
@@ -1161,20 +1159,16 @@ address {
   color: #ffffff;
 }
 
-.subscribe__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .subscribe__input {
+  display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 360px;
-  margin-right: 10px;
-  padding: 0px 12px;
+  width: 450px;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 0 12px;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;

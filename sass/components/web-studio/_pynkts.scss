@@ -7,22 +7,20 @@
     display: none;
 }
 
-.pynkts__list{
-    display: flex;
-}
-
 .pynkts{
-    width: 270px;
+    width: 450px;
 }
 .pynkts:not(:last-child){
     margin-right: 30px;
 }
 
 .pynkts__fon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #F5F4FA;
-    width: 270px;
+    width: 450px;
     height: 120px;
-    padding: 30px 100px;
     margin-bottom: 30px;
 }
 
@@ -32,6 +30,7 @@
 }
 
 .pynkts__title{
+    text-align: center;
     margin-bottom: 10px;
 
     font-size: 14px;

@@ -12,24 +12,26 @@
 
 .clients-list{
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.clients-list__element{
+    @extend %flexCenter;
+    transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 210px;
+    height: 90px;
+    margin: 15px;
+    border: 1px solid $svg-color;
+    border-radius: 4px;
 }
 
 .clients-list__link{
-    @extend %flexCenter;
-    transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid $svg-color;
-    border-radius: 4px;
-    width: 170px;
-    height: 90px;
     fill: $svg-color;
 }
 
-.clients-list__element:not(:last-child){
-    margin-right: 30px;
-}
-
-.clients-list__link:hover,
-.clients-list__link:focus{
+.clients-list__element:hover,
+.clients-list__element:focus{
     transform: scale(1.1);
     border: 1px solid $accent-color;
     fill: $accent-color;
