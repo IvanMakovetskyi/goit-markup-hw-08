@@ -1,7 +1,7 @@
 .list-nav{
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 50px;
-
 }
 
 
@@ -19,6 +19,10 @@
 }
 .list-nav__element:not(:last-child){
     margin-right: 8px;
+}
+
+.list-nav__element:nth-child(n-3){
+    margin-bottom: 15px;
 }
 
 .list-nav__element:focus .list-nav__link,

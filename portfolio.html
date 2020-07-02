@@ -11,32 +11,42 @@
 <body>
     <!--Header-->
     <header>
-        <div class="flex-div">
+        <div class="nav__open-menu">
             <a class="nav__name-company"><p><span class="name-company--blue">Web</span>Studio</p></a>
-            <nav class="nav">
-                <a class="nav__link" href="./index.html"><p class="company-nav">Студия</p></a>
-                <a class="nav__link active" href="./portfolio.html"><p class="portfolio-nav">Портфолио</p></a>
-                <a class="nav__link"><p class="contakts-nav">Контакты</p></a>
-            </nav>
+            <div class="nav__burger" data-menu-button>
+                <svg class="nav__open" width="40px" height="40px" class="nav__open-icon">
+                    <use href="./img/symbol-defs.svg#burger"></use>
+                </svg>
+                <svg class="nav__close" width="40px" height="40px" class="nav__open-icon">
+                    <use href="./img/symbol-defs.svg#close"></use>
+                </svg>
+            </div>
         </div>
-        <ul class="contacts">
-            <li class="contacts__element">
-                <div class="contacts__text">
-                    <svg class="contackts__icon mail" width= "16px" height= "11px">
-                        <use href="./img/symbol-defs.svg#mail"></use>
-                    </svg>
-                    <a class="contacts__link" href="info@devstudio.com">info@devstudio.com</a>
-                </div>
-            </li>
-            <li class="contacts__element">
-                <div class="contacts__text">
-                    <svg class="contackts__icon phone" width= "10px" height= "15px">
-                        <use href="./img/symbol-defs.svg#phone"></use>
-                    </svg>
-                    <a class="contacts__link" href="+380961111111">+38 096 111 11 11</a>
-                </div>
-            </li>
-        </ul>
+        <div class="nav__mobile-menu" data-menu>
+            <nav class="nav">
+                <a class="nav__link active" href="./index.html"><p class="nav__text">Студия</p></a>
+                <a class="nav__link" href="./portfolio.html"><p class="nav__text">Портфолио</p></a>
+                <a class="nav__link"><p class="nav__text">Контакты</p></a>
+            </nav>
+            <ul class="contacts">
+                <li class="contacts__element">
+                    <div class="contacts__text">
+                        <svg class="contackts__icon mail" width= "16px" height= "11px">
+                            <use href="./img/symbol-defs.svg#mail"></use>
+                        </svg>
+                        <a class="contacts__link" href="info@devstudio.com">info@devstudio.com</a>
+                    </div>
+                </li>
+                <li class="contacts__element">
+                    <div class="contacts__text">
+                        <svg class="contackts__icon phone" width= "10px" height= "15px">
+                            <use href="./img/symbol-defs.svg#phone"></use>
+                        </svg>
+                        <a class="contacts__link" href="+380961111111">+38 096 111 11 11</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </header>
     <main class="our-projects">
         <div class="our-projects__nav">
@@ -52,7 +62,7 @@
         <ul class="projects-list">
             <li class="project">
                 <div class="project__overlay">
-                    <img src="./img/technocrac.png" alt="Фото проєкта">
+                    <img width="450px" height="294px" src="./img/technocrac.png" alt="Фото проєкта">
                     <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
                 <div class="project__content">
@@ -62,7 +72,7 @@
             </li>
             <li class="project">
                 <div class="project__overlay">
-                    <img src="./img/new_orlean.png" alt="Фото проєкта">
+                    <img width="450px" height="294px" src="./img/new_orlean.png" alt="Фото проєкта">
                     <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
                 <div class="project__content">
@@ -72,7 +82,7 @@
             </li>
             <li class="project">
                 <div class="project__overlay">
-                    <img src="./img/Seafood.png" alt="Фото проєкта">
+                    <img width="450px" height="294px" src="./img/Seafood.png" alt="Фото проєкта">
                     <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
                 <div class="project__content">
@@ -82,7 +92,7 @@
             </li>
             <li class="project">
                 <div class="project__overlay">
-                    <img src="./img/Prime.png" alt="Фото проєкта">
+                    <img width="450px" height="294px" src="./img/Prime.png" alt="Фото проєкта">
                     <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
                 <div class="project__content">
@@ -92,7 +102,7 @@
             </li>
             <li class="project">
                 <div class="project__overlay">
-                    <img src="./img/Boxes.png" alt="Фото проєкта">
+                    <img width="450px" height="294px" src="./img/Boxes.png" alt="Фото проєкта">
                     <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
                 <div class="project__content">
@@ -102,7 +112,7 @@
             </li>
             <li class="project">
                 <div class="project__overlay">
-                    <img src="./img/Inspiration.png" alt="Фото проєкта">
+                    <img width="450px" height="294px" src="./img/Inspiration.png" alt="Фото проєкта">
                     <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
                 <div class="project__content">
@@ -112,7 +122,7 @@
             </li>
             <li class="project">
                 <div class="project__overlay">
-                    <img src="./img/Limited_edition.png" alt="Фото проєкта">
+                    <img width="450px" height="294px" src="./img/Limited_edition.png" alt="Фото проєкта">
                     <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
                 <div class="project__content">
@@ -122,7 +132,7 @@
             </li>
             <li class="project">
                 <div class="project__overlay">
-                    <img src="./img/Lab.png" alt="Фото проєкта">
+                    <img width="450px" height="294px" src="./img/Lab.png" alt="Фото проєкта">
                     <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
                 <div class="project__content">
@@ -132,7 +142,7 @@
             </li>
             <li class="project">
                 <div class="project__overlay">
-                    <img src="./img/Growing.png" alt="Фото проєкта">
+                    <img width="450px" height="294px" src="./img/Growing.png" alt="Фото проєкта">
                     <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
                 <div class="project__content">
@@ -191,11 +201,12 @@
                 <h3 class="subscribe__title">Подписаться на рассылку</h3>
                 <form class="subscribe__form">
                     <input placeholder="E-mail" type="email" class="subscribe__input" >
-                    <button class="subscribe__btn"><span class="subscribe__text">Подписаться</span><svg width="24" height="24" class="clients-list__icon"><use href="./img/symbol-defs.svg#fly"></use></svg></button>
+                    <p style="display: inline-block;"><button class="subscribe__btn"><span class="subscribe__text">Подписаться</span><svg width="24" height="24" class="clients-list__icon"><use href="./img/symbol-defs.svg#fly"></use></svg></button></p>
                 </form>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
