@@ -1,0 +1,128 @@
+.nav__open-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__burger{
+    transition: fill 250ms $timing-function;
+}
+
+.nav__burger:hover,
+.nav__burger:focus{
+    fill: $accent-color;
+    transition: fill 250ms $timing-function;
+}
+
+.nav__open{
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: inherit;
+
+    transition: 500ms $timing-function;
+}
+
+.nav__burger.is-open .nav__open{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: 500ms $timing-function;
+}
+
+.nav__close{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: 500ms $timing-function;
+}
+
+.nav__burger.is-open .nav__close{
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: inherit;
+}
+
+.nav__mobile-menu{
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 999;
+    border-top: 1px solid #ECECEC;
+    padding: 60px 0;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.nav__mobile-menu.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+}
+
+.nav{
+    margin-bottom: 60px;
+}
+
+
+.nav__name-company{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    
+    color: $black-color;
+}
+
+.name-company--blue{
+    color: $accent-color;
+}
+
+.nav__link{
+    display: block;
+    margin: 0 auto;
+    max-width: max-content;
+    transition: color 250ms $timing-function;
+    padding: 12px 0; 
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: $text-color;
+}
+
+.nav__link:not(:last-child){
+    margin-bottom: 40px;
+}
+
+.nav__link:focus,
+.nav__link:hover{
+    color: $accent-color;
+}
+
+.active{
+    position: relative;
+}
+
+.active::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+}

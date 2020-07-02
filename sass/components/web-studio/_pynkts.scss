@@ -1,0 +1,51 @@
+.main-pynkts{
+    @extend %container;
+    margin-bottom: 94px;
+}
+
+.main-pynkts__title{
+    display: none;
+}
+
+.pynkts__list{
+    display: flex;
+}
+
+.pynkts{
+    width: 270px;
+}
+.pynkts:not(:last-child){
+    margin-right: 30px;
+}
+
+.pynkts__fon{
+    background-color: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    padding: 30px 100px;
+    margin-bottom: 30px;
+}
+
+.pynkts__icon{
+    width: 70px;
+    height: 70px;
+}
+
+.pynkts__title{
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: $text-color;
+}
+
+.pynkts__text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: $primary-color;
+}
