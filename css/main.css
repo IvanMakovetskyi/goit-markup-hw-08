@@ -276,7 +276,8 @@ p {
 }
 
 header, footer, .main-pynkts, .occupation, .comand--width, .clients, .our-projects {
-  width: 480px;
+  max-width: 747px;
+  margin: 0 auto;
   padding: 0 15px;
 }
 
