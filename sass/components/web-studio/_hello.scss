@@ -6,6 +6,10 @@
     margin-bottom: 94px;
 
     text-align: center;
+
+    @media screen and (min-width: 1199px){
+        height: 600px;
+    }
 }
 
 .hello__overlay{
@@ -16,6 +20,10 @@
     top: 0;
     left: 0;
     background-color: rgba(47, 48, 58, 0.8);
+
+    @media screen and (min-width: 1199px){
+        padding-top: 200px;
+    }
 }
 
 .hello__title{
@@ -29,6 +37,12 @@
     text-transform: uppercase;
 
     color: $primary-white-color;
+
+    @media screen and (min-width: 1199px){
+        width: 554px;
+        font-size: 44px;
+        line-height: 60px;
+    }
 }
 .hello__buy{
     padding: 10px 32px;

@@ -1,6 +1,14 @@
 address{
     font-style: normal;
     margin-bottom: 60px;
+    @media screen and(min-width:767px){
+        margin-left: 75px;
+    }
+
+    @media screen and(min-width:1199px){
+        margin-right: 70px;
+        margin-left: 0;
+    }
 }
 
 .adress__name-company{
