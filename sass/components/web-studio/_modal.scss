@@ -16,7 +16,6 @@
 }
 
 .modal{
-    max-width: 450px;
     padding: 40px;
     position: absolute;
     top: 50%;
@@ -25,7 +24,7 @@
     background-color: $primary-white-color;
 
     @media screen and(max-width:767px){
-        padding: 40px 15px;
+        max-width: 450px;
     }
 }
 
@@ -78,8 +77,12 @@
     font: inherit;
     border: 1px solid #2a2a2a;
     border-radius: 3px;
-    max-width: 370px;
     height: 40px;
+    width: 100%;
+
+    @media screen and(max-width:767px){
+        max-width: 370px;
+    }
 }
 
 .modal__input--coment{
