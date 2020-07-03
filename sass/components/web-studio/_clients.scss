@@ -19,11 +19,15 @@
 .clients-list__element{
     @extend %flexCenter;
     transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 210px;
+    width: calc((100% - 60px)/2);
     height: 90px;
     margin: 15px;
     border: 1px solid $svg-color;
     border-radius: 4px;
+
+    @media screen and(min-width:767px){
+        width: calc((100% - 90px)/3);
+    }
 
     @media screen and(min-width:1199px){
         width: 170px;

@@ -27,7 +27,7 @@
 }
 
 .hello__title{
-    width: 360px;
+    max-width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
 
@@ -39,7 +39,7 @@
     color: $primary-white-color;
 
     @media screen and (min-width: 1199px){
-        width: 554px;
+        max-width: 554px;
         font-size: 44px;
         line-height: 60px;
     }
