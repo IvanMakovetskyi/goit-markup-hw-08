@@ -735,6 +735,12 @@ footer {
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    padding: 40px 15px;
+  }
+}
+
 .modal__title {
   display: inline-block;
   margin-bottom: 30px;
@@ -782,7 +788,7 @@ footer {
   font: inherit;
   border: 1px solid #2a2a2a;
   border-radius: 3px;
-  width: 370px;
+  max-width: 370px;
   height: 40px;
 }
 
