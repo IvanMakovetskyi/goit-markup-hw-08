@@ -282,7 +282,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header, .ftr, .main-pynkts, .occupation, .comand--width, .clients, .our-projects {
-  max-width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -660,8 +659,8 @@ footer {
 
 .hello {
   position: relative;
-  background-image: url(../img/Header_imgfon.png);
-  background-size: cover;
+  background-image: url(../img/Header_imgfon-phone.jpg);
+  background-size: contain;
   height: 400px;
   margin-bottom: 94px;
   text-align: center;
