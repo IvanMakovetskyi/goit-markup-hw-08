@@ -316,18 +316,17 @@ header, .ftr, .main-pynkts, .occupation, .comand--width, .clients, .our-projects
           justify-content: center;
 }
 
-* {
-  border: 1px solid red;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
   font-family: Roboto;
 }
 
 a {
   font-family: Roboto;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
 }
 
 .visually-hidden {
