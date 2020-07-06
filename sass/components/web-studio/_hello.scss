@@ -1,14 +1,38 @@
 .hello{
     position: relative;
     background-image: url(../img/Header_imgfon-phone.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 400px;
     margin-bottom: 94px;
 
     text-align: center;
 
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../img/Header_imgfon-phone@2x.jpg);
+    }
+
+    @media screen and (min-width: 768px){
+        background-image: url(../img/Header_imgfon-tablet.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../img/Header_imgfon-tablet@2x.jpg);
+        }
+    }
+
     @media screen and (min-width: 1199px){
         height: 600px;
+        background-image: url(../img/Header_imgfon-desktop.jpg);
+    
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url(../img/Header_imgfon-desktop@2x.jpg);
+            }
     }
 }
 

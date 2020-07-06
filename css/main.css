@@ -556,7 +556,7 @@ footer {
 
 @media screen and (min-width: 767px) {
   .nav__link {
-    padding: 30px 0px;
+    padding: 32px 0px;
   }
 }
 
@@ -615,13 +615,12 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 30px 0px;
+    padding: 32px 0px;
   }
 }
 
 .contackts__icon {
   margin-right: 10px;
-  fill: #757575;
 }
 
 .contacts__link {
@@ -650,6 +649,7 @@ footer {
 }
 
 .contacts__text {
+  fill: #757575;
   -webkit-transition: color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -657,6 +657,16 @@ footer {
 .contacts__text:focus,
 .contacts__text:hover {
   fill: #2196f3;
+}
+
+.contacts__text:focus .contackts__icon,
+.contacts__text:hover .contackts__icon {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__text:focus .contacts__link,
@@ -667,15 +677,41 @@ footer {
 .hello {
   position: relative;
   background-image: url(../img/Header_imgfon-phone.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 400px;
   margin-bottom: 94px;
   text-align: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hello {
+    background-image: url(../img/Header_imgfon-phone@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hello {
+    background-image: url(../img/Header_imgfon-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hello {
+    background-image: url(../img/Header_imgfon-tablet@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 1199px) {
   .hello {
     height: 600px;
+    background-image: url(../img/Header_imgfon-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 1199px) and (min-resolution: 2dppx) {
+  .hello {
+    background-image: url(../img/Header_imgfon-desktop@2x.jpg);
   }
 }
 
@@ -1318,8 +1354,8 @@ footer {
   top: 0;
   -webkit-transform: translateY(102%);
           transform: translateY(102%);
-  width: 450px;
-  height: 294px;
+  max-width: 100%;
+  height: 100%;
   margin: 0px;
   padding: 0px 24px;
   color: #ffffff;
