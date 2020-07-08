@@ -29,6 +29,7 @@
 
 .nav__open{
     position: relative;
+    right: 0;
     opacity: 1;
     visibility: visible;
     pointer-events: inherit;
@@ -38,6 +39,7 @@
 
 .nav__burger.is-open .nav__open{
     position: absolute;
+    right: 40px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -47,6 +49,7 @@
 
 .nav__close{
     position: absolute;
+    right: 40px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -56,6 +59,7 @@
 
 .nav__burger.is-open .nav__close{
     position: relative;
+    right: 0px;
     opacity: 1;
     visibility: visible;
     pointer-events: inherit;

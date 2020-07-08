@@ -1,6 +1,6 @@
 .hello{
     position: relative;
-    background-image: url(../img/Header_imgfon-phone.jpg);
+    background-image: url(../img/Header_fon-phone.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
@@ -11,27 +11,27 @@
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        background-image: url(../img/Header_imgfon-phone@2x.jpg);
+        background-image: url(../img/Header_fon-phone@2x.jpg);
     }
 
     @media screen and (min-width: 768px){
-        background-image: url(../img/Header_imgfon-tablet.jpg);
+        background-image: url(../img/Header_fon-tablet.jpg);
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url(../img/Header_imgfon-tablet@2x.jpg);
+            background-image: url(../img/Header_fon-tablet@2x.jpg);
         }
     }
 
     @media screen and (min-width: 1199px){
         height: 600px;
-        background-image: url(../img/Header_imgfon-desktop.jpg);
+        background-image: url(../img/Header_fon-desktop.jpg);
     
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background-image: url(../img/Header_imgfon-desktop@2x.jpg);
+                background-image: url(../img/Header_fon-desktop@2x.jpg);
             }
     }
 }

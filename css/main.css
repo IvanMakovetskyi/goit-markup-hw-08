@@ -281,6 +281,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 header, .ftr, .main-pynkts, .occupation, .comand--width, .clients, .our-projects {
   max-width: 100%;
   margin: 0 auto;
@@ -439,6 +444,7 @@ footer {
 
 .nav__open {
   position: relative;
+  right: 0;
   opacity: 1;
   visibility: visible;
   pointer-events: inherit;
@@ -448,6 +454,7 @@ footer {
 
 .nav__burger.is-open .nav__open {
   position: absolute;
+  right: 40px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -457,6 +464,7 @@ footer {
 
 .nav__close {
   position: absolute;
+  right: 40px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -466,6 +474,7 @@ footer {
 
 .nav__burger.is-open .nav__close {
   position: relative;
+  right: 0px;
   opacity: 1;
   visibility: visible;
   pointer-events: inherit;
@@ -676,7 +685,7 @@ footer {
 
 .hello {
   position: relative;
-  background-image: url(../img/Header_imgfon-phone.jpg);
+  background-image: url(../img/Header_fon-phone.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
@@ -686,32 +695,32 @@ footer {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hello {
-    background-image: url(../img/Header_imgfon-phone@2x.jpg);
+    background-image: url(../img/Header_fon-phone@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hello {
-    background-image: url(../img/Header_imgfon-tablet.jpg);
+    background-image: url(../img/Header_fon-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hello {
-    background-image: url(../img/Header_imgfon-tablet@2x.jpg);
+    background-image: url(../img/Header_fon-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1199px) {
   .hello {
     height: 600px;
-    background-image: url(../img/Header_imgfon-desktop.jpg);
+    background-image: url(../img/Header_fon-desktop.jpg);
   }
 }
 
 @media screen and (min-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 1199px) and (min-resolution: 2dppx) {
   .hello {
-    background-image: url(../img/Header_imgfon-desktop@2x.jpg);
+    background-image: url(../img/Header_fon-desktop@2x.jpg);
   }
 }
 
@@ -1115,7 +1124,7 @@ footer {
 }
 
 .worker {
-  max-width: 450px;
+  width: 450px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -1143,8 +1152,29 @@ footer {
 }
 
 .worker__photo {
-  margin-bottom: 30px;
   width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .worker__photo {
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .worker__photo {
+    height: 260px;
+  }
+}
+
+.worker__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .worker__name {
@@ -1328,6 +1358,12 @@ footer {
   }
 }
 
+@media screen and (min-width: 1199px) {
+  .project {
+    width: 370px;
+  }
+}
+
 .project:hover,
 .project:focus .project__overlay {
   z-index: 0;
@@ -1345,8 +1381,25 @@ footer {
 }
 
 .project__photo {
-  width: 100%;
   height: 294px;
+}
+
+@media screen and (min-width: 767px) {
+  .project__photo {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .project__photo {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .project__photo {
+    width: 370px;
+  }
 }
 
 .overlay__text {
@@ -1372,6 +1425,12 @@ footer {
 @media screen and (min-width: 767px) {
   .overlay__text {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .overlay__text {
+    width: 370px;
   }
 }
 
