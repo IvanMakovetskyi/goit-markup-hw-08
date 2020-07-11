@@ -4,7 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
-    margin-bottom: 94px;
+    margin-bottom: 60px;
 
     text-align: center;
 
@@ -24,7 +24,8 @@
         }
     }
 
-    @media screen and (min-width: 1199px){
+    @media screen and (min-width: 1200px){
+        margin-bottom: 94px;
         height: 600px;
         background-image: url(../img/Header_fon-desktop.jpg);
     

@@ -1,6 +1,12 @@
 .comand{
-    padding: 94px 0;
+    padding: 60px 0;
+    margin-bottom: 60px;
     background-color: #F5F4FA;
+
+    @media screen and(min-width:1200px){
+        padding: 94px 0;
+        margin-bottom: 94px;
+    }
 }
 
 .comand--width{
@@ -8,10 +14,16 @@
 }
 
 .comand__title{
-    @include title($text-color);
-    margin-bottom: 50px;
+    font-size: 28px;
+    line-height: 33px;
+
+    margin-bottom: 30px;
     text-align: center;
 
+    @media screen and(min-width:1200px){
+        @include title($text-color);
+        margin-bottom: 50px;
+    }
 }
 
 .personal{
@@ -30,18 +42,12 @@
     padding-bottom: 24px;
     margin: 15px;
 
-    @media screen and(min-width:767px){
+    @media screen and(min-width:768px){
         width: 354px;
     }
 
-    @media screen and(min-width:1199px){
+    @media screen and(min-width:1200px){
         width: 270px;
-    }
-}
-
-.worker:not(:last-child){
-    @media screen and(max-width:767px){
-        margin-bottom: 30px;
     }
 }
 
@@ -53,7 +59,7 @@
         height: 320px;
     }
 
-    @media screen and (min-width:767px){
+    @media screen and (min-width:768px){
         height: 260px;
     }
 }
@@ -76,12 +82,16 @@
 }
 
 .worker__text{
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 
     font-size: 16px;
     line-height: 19px;
 
     color: $primary-color;
+
+    @media screen and(min-width:768px){
+        margin-bottom: 30px;
+    }
 }
 
 .ss-list{

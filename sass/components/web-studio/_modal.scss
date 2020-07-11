@@ -23,8 +23,12 @@
     transform: translate(-50%, -50%);
     background-color: $primary-white-color;
 
-    @media screen and(max-width:767px){
-        max-width: 450px;
+    @media screen and(max-width:479px){
+        width: calc(100% - 30px);
+    }
+
+    @media screen and(min-width:480px) and(max-width:767px){
+        width: 450px;
     }
 }
 

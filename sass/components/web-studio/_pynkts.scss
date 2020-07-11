@@ -1,7 +1,10 @@
 .main-pynkts{
     @extend %container;
-    margin-bottom: 94px;
+    margin-bottom: 60px;
 
+    @media screen and(min-width:1200px){
+        margin-bottom: 94px;
+    }
 }
 
 .main-pynkts__title{
@@ -11,19 +14,17 @@
 .pynkts__list{
     @extend %flexCenter;
     flex-wrap: wrap;
-    @media screen and(min-width:767px){
-        margin: -15px;
-    }
+    margin: -15px;
 }
 
 .pynkts{
     max-width: 450px;
+    margin: 15px;
 
-    @media screen and(min-width:767px){
+    @media screen and(min-width:768px){
         max-width: 354px;
-        margin: 15px;
     }
-    @media screen and(min-width:1199px){
+    @media screen and(min-width:1200px){
         max-width: 270px;
     }
 }
@@ -54,7 +55,7 @@
 
     color: $text-color;
 
-    @media screen and(min-width:767px){
+    @media screen and(min-width:768px){
         text-align: start;
     }
 }
